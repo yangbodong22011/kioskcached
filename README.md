@@ -17,32 +17,32 @@
 
 - set 性能：22891.8 QPS
 
-![](/images/memcached_set.png)
+![](/image/memcached_set.png)
 
 - get 性能：25262.8 QPS
 
-![](/images/memcached_get.png)
+![](/image/memcached_get.png)
 
 ### 4： Redis 测试结果
 
 - set 性能：30156.82 QPS
 
-![](/images/redis_set.png)
+![](/image/redis_set.png)
 
 - get 性能：31007.75 QPS
 
-![](/images/redis_get.png)
+![](/image/redis_get.png)
 
 
 ### 5： Kioskcached 测试结果
 
 - set 性能：26422.9 QPS
 
-![](/images/kiosk_set.png)
+![](/image/kiosk_set.png)
 
 - get 性能：26224.9 QPS
 
-![](/images/kiosk_get.png)
+![](/image/kiosk_get.png)
 
 
 
