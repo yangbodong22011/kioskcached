@@ -52,7 +52,8 @@ public:
     }
 
     std::string key() const {        //所有需要调用key的地方传递.size()方法.
-        return std::string(data_);
+        std::string ret(data_);
+        return ret.substr(0,keylen_);
     }
     
     uint32_t flags() const {
