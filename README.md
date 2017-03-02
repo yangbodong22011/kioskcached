@@ -36,13 +36,6 @@
 
 ### 5： Kioskcached 测试结果
 
-- set 性能：26422.9 QPS
-
-![](/image/kiosk_set.png)
-
-- get 性能：26224.9 QPS
-
-![](/image/kiosk_get.png)
 
 
 
@@ -55,4 +48,4 @@
 |---|---|---|
 |Memcached|22891.8|25262.8|
 |redis|30156.8|31007.7|
-|Kioskcached|26422.9|26224.9|
+|Kioskcached|||
