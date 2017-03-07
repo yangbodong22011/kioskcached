@@ -1,0 +1,82 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ANET_ANET_H	anet.h	2;"	d
+ANET_CONNECT_BE_BINDING	anet.c	229;"	d	file:
+ANET_CONNECT_NONBLOCK	anet.c	228;"	d	file:
+ANET_CONNECT_NONE	anet.c	227;"	d	file:
+ANET_DEFINE_H	define.h	2;"	d
+ANET_ERR	anet.h	8;"	d
+ANET_ERR_LEN	anet.h	9;"	d
+ANET_IP_ONLY	anet.h	13;"	d
+ANET_NONE	anet.h	12;"	d
+ANET_OK	anet.h	7;"	d
+ANET_PROTOCOL_H	protocol.h	2;"	d
+CHAT_MESSAGE	protocol.h	13;"	d
+DEFAULT_BUFF_SIZE	define.h	10;"	d
+DEFAULT_LISTEN_BACKLOG	define.h	24;"	d
+DEFAULT_LISTEN_PORT	define.h	26;"	d
+DEFAULT_MAX_CLIENT_COUNT	define.h	25;"	d
+GET	protocol.h	15;"	d
+MAGIC_NUMBER	protocol.h	9;"	d
+QUERY_NAME	protocol.h	12;"	d
+SET	protocol.h	14;"	d
+_anetTcpServer	anet.c	/^static int _anetTcpServer(char *err, int port, char *bindaddr, int af, int backlog) {$/;"	f	file:
+alloc_packet	protocol.c	/^package_t *alloc_packet(uint32_t data_len)$/;"	f
+anetBlock	anet.c	/^int anetBlock(char *err, int fd) {$/;"	f
+anetCreateSocket	anet.c	/^static int anetCreateSocket(char *err, int domain) {$/;"	f	file:
+anetDisableTcpNoDelay	anet.c	/^int anetDisableTcpNoDelay(char *err, int fd) {$/;"	f
+anetEnableTcpNoDelay	anet.c	/^int anetEnableTcpNoDelay(char *err, int fd) {$/;"	f
+anetFormatAddr	anet.c	/^static int anetFormatAddr(char *buf, size_t buf_len, char *ip, int port) {$/;"	f	file:
+anetFormatPeer	anet.c	/^int anetFormatPeer(int fd, char *buf, size_t buf_len) {$/;"	f
+anetFormatSock	anet.c	/^int anetFormatSock(int fd, char *buff, size_t buff_len) {$/;"	f
+anetGenericAccept	anet.c	/^static int anetGenericAccept(char *err, int s, struct sockaddr *sa, socklen_t *len) {$/;"	f	file:
+anetGenericResolve	anet.c	/^static int anetGenericResolve(char *err, char *host, char *ipbuf, socklen_t ipbuf_len, int flags) {$/;"	f	file:
+anetKeepAlive	anet.c	/^int anetKeepAlive(char *err, int fd, int interval) {$/;"	f
+anetListen	anet.c	/^static int anetListen(char *err, int s, struct sockaddr *sa, socklen_t len, int backlog) {$/;"	f	file:
+anetNonBlock	anet.c	/^int anetNonBlock(char *err, int fd) {$/;"	f
+anetPeerToString	anet.c	/^static int anetPeerToString(int fd, char *ip, socklen_t ip_len, int *port) {$/;"	f	file:
+anetRead	anet.c	/^int anetRead(int fd, char *buf, int count) {$/;"	f
+anetResolve	anet.c	/^int anetResolve(char *err, char *host, char *ipbuf, socklen_t ipbuf_len) {$/;"	f
+anetResolveIP	anet.c	/^int anetResolveIP(char *err, char *host, char *ipbuf, socklen_t ipbuf_len) {$/;"	f
+anetSendTimeout	anet.c	/^int anetSendTimeout(char *err, int fd, long long ms) {$/;"	f
+anetSetBlock	anet.c	/^static int anetSetBlock(char *err, int fd, int non_block) {$/;"	f	file:
+anetSetError	anet.c	/^static void anetSetError(char *err, const char *fmt, ...) {$/;"	f	file:
+anetSetReuseAddr	anet.c	/^static int anetSetReuseAddr(char *err, int fd) {$/;"	f	file:
+anetSetSendBuffer	anet.c	/^int anetSetSendBuffer(char *err, int fd, int buffsize) {$/;"	f
+anetSetTcpNoDelay	anet.c	/^static int anetSetTcpNoDelay(char *err, int fd, int val) {$/;"	f	file:
+anetSockName	anet.c	/^static int anetSockName(int fd, char *ip, socklen_t ip_len, int *port) {$/;"	f	file:
+anetTcp6Server	anet.c	/^int anetTcp6Server(char *err, int port, char *bindaddr, int backlog) {$/;"	f
+anetTcpAccept	anet.c	/^int anetTcpAccept(char *err, int s, char *ip, socklen_t ip_len, int *port) {$/;"	f
+anetTcpConnect	anet.c	/^int anetTcpConnect(char *err, char *addr, int port) {$/;"	f
+anetTcpGenericConnect	anet.c	/^static int anetTcpGenericConnect(char *err, char *addr, int port, char *source_addr, int flags) {$/;"	f	file:
+anetTcpKeepAlive	anet.c	/^int anetTcpKeepAlive(char *err, int fd) {$/;"	f
+anetTcpNonBlockBestEffortBindConnect	anet.c	/^int anetTcpNonBlockBestEffortBindConnect(char *err, char *addr, int port, char *source_addr) {$/;"	f
+anetTcpNonBlockBindConnect	anet.c	/^int anetTcpNonBlockBindConnect(char *err, char *addr, int port, char *source_addr) {$/;"	f
+anetTcpNonBlockConnect	anet.c	/^int anetTcpNonBlockConnect(char *err, char *addr, int port) {$/;"	f
+anetTcpServer	anet.c	/^int anetTcpServer(char *err, int port, char *bindaddr, int backlog) {$/;"	f
+anetUnixAccept	anet.c	/^int anetUnixAccept(char *err, int s) {$/;"	f
+anetUnixConnect	anet.c	/^int anetUnixConnect(char *err, char *path) {$/;"	f
+anetUnixGenericConnect	anet.c	/^static int anetUnixGenericConnect(char *err, char *path, int flags) {$/;"	f	file:
+anetUnixNonBlockConnect	anet.c	/^int anetUnixNonBlockConnect(char *err, char *path) {$/;"	f
+anetUnixServer	anet.c	/^int anetUnixServer(char *err, char *path, mode_t perm, int backlog) {$/;"	f
+anetV6Only	anet.c	/^static int anetV6Only(char *err, int s) {$/;"	f	file:
+anetWrite	anet.c	/^int anetWrite(int fd, char *buf, int count) {$/;"	f
+data	protocol.h	/^    unsigned char data[0];$/;"	m	struct:__anon2
+do_package	protocol.c	/^void do_package(package_t *req_package, package_t **resp_package)$/;"	f
+free_package	protocol.c	/^void free_package(package_t *package)$/;"	f
+head	protocol.h	/^    package_head_t head;$/;"	m	struct:__anon2
+length	protocol.h	/^    uint32_t length;$/;"	m	struct:__anon1
+magic	protocol.h	/^    uint32_t magic;$/;"	m	struct:__anon1
+main	server_test.c	/^int main()$/;"	f
+package_encode	protocol.c	/^int package_encode(buffer_t *buffer, package_t *package)$/;"	f
+package_head_t	protocol.h	/^} __attribute__((packed)) package_head_t;$/;"	t	typeref:struct:__anon1
+package_t	protocol.h	/^} __attribute__((packed)) package_t;$/;"	t	typeref:struct:__anon2
+packet_decode	protocol.c	/^int packet_decode(buffer_t *buffer, package_t **package)$/;"	f
+type	protocol.h	/^    uint32_t type;$/;"	m	struct:__anon1
+zfree	define.h	7;"	d
+zmalloc	define.h	6;"	d
+zrealloc	define.h	8;"	d

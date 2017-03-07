@@ -45,7 +45,7 @@ class MemCachedClient
         };
 
 
-        int Insert(const char* key, const char* value,time_t expiration = 30)
+        int Insert(const char* key, const char* value,int expiration)
         {
             if (NULL == key || NULL == value)
             {  
