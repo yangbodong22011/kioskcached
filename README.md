@@ -7,18 +7,20 @@
         结构。采用Memcached客户端协议作为标准协议。
 
 
-## 对比Memcached和Redis
+## 一、对比Memcached和Redis
 
 ### 1：测试环境： 
 
 > OS ： RedHat 7 
-Kernel : Linux version 3.10.0-514.el7.x86_64
-CPU : Intel(R) Core(TM) i5 CPU       M 520  @ 2.40GHz
+Kernel : Linux version 3.10.0-514.el7.x86_64   
+>
+CPU : Intel(R) Core(TM) i5 CPU M 520  @ 2.40GHz  
+>
 Mem : 8G
 >
 //备注：除了测试三个数据库的QPS，我还使用Google的  [gperftools](http://www.cnblogs.com/caosiyang/archive/2013/01/25/2876244.html)  工具我的项目做了`CPU PROFILER`，找出了代码中占用CPU最多的函数，并考虑优化它。
 
-###2 ：测试条件：
+### 2 ：测试条件：
 - 100000条 key-value 数据，每条大概100字节大小
 
 
@@ -46,7 +48,7 @@ Mem : 8G
 ### 5： Kioskcached 测试结果
 
 
-- 当value的值为**100字节**时 ： QPS  = 316275
+### （1）当value的值为**100字节**时 ： QPS  = 316275
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309085017711)
 
@@ -71,8 +73,8 @@ Total: 259 samples
 
 
 
-|序号|说明|
-| - | - |
+| 序号 | 说明 |
+| --- | --- |
 |1| 分析样本数量（不包含其他函数调用）|
 |2|分析样本百分比（不包含其他函数调用）| 
 |3| 目前为止的分析样本百分比（不包含其他函数调用）|
@@ -82,7 +84,8 @@ Total: 259 samples
 
   
  
-- 当value的值为**1000字节**时 ： QPS  = 203203
+
+### （2）当value的值为**1000字节**时 ： QPS  = 203203
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309085142451)
 
@@ -98,9 +101,8 @@ Total: 426 samples
 可以发现与100字节相比较，此时read系统调用占用CPU已经成为了第一。
 ```
 
-- 当value的值为10000字节时
 
-
+### （3）当value的值为10000字节时 ： QPS  = 167266
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309085237043)  
 
@@ -121,7 +123,8 @@ malloc 还是我们的难题和瓶颈。
 ```
 
 
-3 ： 总结 
+
+### （4）： 总结 
 
 通过上面的测试，可以发现下面这几个函数是主要的CPU性能瓶颈
 
@@ -135,7 +138,7 @@ __read_nocancel
 这些都消耗非常多的CPU，要是优化的话先从它们入手，我自己可以处理的是`malloc` 和 `std::_Hashtable::_M_find_before_node`。
 
 
-# 四：改进方法
+# 二、改进方法
 
 - 使用tcmalloc等第三方性能优于glibc ptmalloc的内存分配器。[正在完成]
 - 重新找寻Hash函数，做适配替代目前的Hash函数。[未完成]
