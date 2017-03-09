@@ -52,7 +52,7 @@ Mem : 8G
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309085017711)
 
-使用`gperftools`找出使用CPU前几位的函数为：
+使用`gperftools`找出使用CPU前几位的函数为：[output_100.txt](https://github.com/yangbodong22011/kioskcached/blob/master/test/TestFile/output_100.txt)
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309004137410)
 
@@ -89,8 +89,7 @@ Total: 259 samples
 
 ![这里写图片描述](http://img.blog.csdn.net/20170309085142451)
 
-使用`gperftools`找出使用CPU前几位的函数为：
-
+使用`gperftools`找出使用CPU前几位的函数为：[output_1000.txt](https://github.com/yangbodong22011/kioskcached/blob/master/test/TestFile/output_1000.txt)
 ```
 Total: 426 samples
       78  18.3%  18.3%       78  18.3% __read_nocancel
@@ -108,8 +107,7 @@ Total: 426 samples
 
 
 
-使用`gperftools`找出使用CPU前几位的函数为：
-
+使用`gperftools`找出使用CPU前几位的函数为：[output_10000.txt](https://github.com/yangbodong22011/kioskcached/blob/master/test/TestFile/output_10000.txt)
 ```
 Total: 521 samples
      102  19.6%  19.6%      102  19.6% __read_nocancel
