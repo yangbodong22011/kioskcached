@@ -138,6 +138,6 @@ __read_nocancel
 
 # 二、改进方法
 
-- 使用tcmalloc等第三方性能优于glibc ptmalloc的内存分配器。[正在完成]
-- 重新找寻Hash函数，做适配替代目前的Hash函数。[未完成]
+- 使用tcmalloc等第三方性能优于glibc ptmalloc的内存分配器。[已完成](http://blog.csdn.net/yangbodong22011/article/details/61195268)
 - 使用多个unordered_set将数据分片存取
+- 重新找寻Hash函数，做适配替代目前的Hash函数。[未完成]
